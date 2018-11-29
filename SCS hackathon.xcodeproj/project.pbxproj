@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		218FF70F3277BD14DE0883D8 /* Pods_SCS_hackathonUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FAC6ABB744BBAE3195FEF09 /* Pods_SCS_hackathonUITests.framework */; };
 		321E525B21A97B8600D20D51 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 321E525A21A97B8600D20D51 /* AppDelegate.swift */; };
 		321E525D21A97B8600D20D51 /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 321E525C21A97B8600D20D51 /* art.scnassets */; };
 		321E525F21A97B8700D20D51 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 321E525E21A97B8700D20D51 /* ViewController.swift */; };
@@ -16,6 +17,8 @@
 		321E527221A97B8F00D20D51 /* SCS_hackathonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 321E527121A97B8F00D20D51 /* SCS_hackathonTests.swift */; };
 		321E527D21A97B8F00D20D51 /* SCS_hackathonUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 321E527C21A97B8F00D20D51 /* SCS_hackathonUITests.swift */; };
 		323F633121AFBBFD00EC7854 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 323F633021AFBBFD00EC7854 /* HomeViewController.swift */; };
+		3F9932C98BE3E3EA52EFE932 /* Pods_SCS_hackathon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6904F19B66806FD1D89B1F5 /* Pods_SCS_hackathon.framework */; };
+		5A5890559857AE6208EC7E56 /* Pods_SCS_hackathonTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7ABA77785C04A7A847AF2B85 /* Pods_SCS_hackathonTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,15 @@
 		321E527C21A97B8F00D20D51 /* SCS_hackathonUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCS_hackathonUITests.swift; sourceTree = "<group>"; };
 		321E527E21A97B8F00D20D51 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		323F633021AFBBFD00EC7854 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		332E36BE5204B692D86781A7 /* Pods-SCS hackathonTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SCS hackathonTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SCS hackathonTests/Pods-SCS hackathonTests.debug.xcconfig"; sourceTree = "<group>"; };
+		4A19E68FF84B004E6C7D8214 /* Pods-SCS hackathon.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SCS hackathon.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SCS hackathon/Pods-SCS hackathon.debug.xcconfig"; sourceTree = "<group>"; };
+		4FAC6ABB744BBAE3195FEF09 /* Pods_SCS_hackathonUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SCS_hackathonUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6F038815D4C6AE01F82FF8AA /* Pods-SCS hackathonUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SCS hackathonUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SCS hackathonUITests/Pods-SCS hackathonUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		7ABA77785C04A7A847AF2B85 /* Pods_SCS_hackathonTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SCS_hackathonTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8AEF75CBF238F00A3A94A41B /* Pods-SCS hackathonTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SCS hackathonTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SCS hackathonTests/Pods-SCS hackathonTests.release.xcconfig"; sourceTree = "<group>"; };
+		9A09910851061ADDCE5295C8 /* Pods-SCS hackathon.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SCS hackathon.release.xcconfig"; path = "Pods/Target Support Files/Pods-SCS hackathon/Pods-SCS hackathon.release.xcconfig"; sourceTree = "<group>"; };
+		AD232C0A5352A6AA3DD0680C /* Pods-SCS hackathonUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SCS hackathonUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SCS hackathonUITests/Pods-SCS hackathonUITests.release.xcconfig"; sourceTree = "<group>"; };
+		D6904F19B66806FD1D89B1F5 /* Pods_SCS_hackathon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SCS_hackathon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F9932C98BE3E3EA52EFE932 /* Pods_SCS_hackathon.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5A5890559857AE6208EC7E56 /* Pods_SCS_hackathonTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,12 +86,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				218FF70F3277BD14DE0883D8 /* Pods_SCS_hackathonUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		05C74684D48AC65CEE54E70F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D6904F19B66806FD1D89B1F5 /* Pods_SCS_hackathon.framework */,
+				7ABA77785C04A7A847AF2B85 /* Pods_SCS_hackathonTests.framework */,
+				4FAC6ABB744BBAE3195FEF09 /* Pods_SCS_hackathonUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		321E524E21A97B8600D20D51 = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +110,8 @@
 				321E527021A97B8F00D20D51 /* SCS hackathonTests */,
 				321E527B21A97B8F00D20D51 /* SCS hackathonUITests */,
 				321E525821A97B8600D20D51 /* Products */,
+				653D4DC7987D8619E5EB3DF4 /* Pods */,
+				05C74684D48AC65CEE54E70F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -131,6 +158,19 @@
 			path = "SCS hackathonUITests";
 			sourceTree = "<group>";
 		};
+		653D4DC7987D8619E5EB3DF4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4A19E68FF84B004E6C7D8214 /* Pods-SCS hackathon.debug.xcconfig */,
+				9A09910851061ADDCE5295C8 /* Pods-SCS hackathon.release.xcconfig */,
+				332E36BE5204B692D86781A7 /* Pods-SCS hackathonTests.debug.xcconfig */,
+				8AEF75CBF238F00A3A94A41B /* Pods-SCS hackathonTests.release.xcconfig */,
+				6F038815D4C6AE01F82FF8AA /* Pods-SCS hackathonUITests.debug.xcconfig */,
+				AD232C0A5352A6AA3DD0680C /* Pods-SCS hackathonUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -138,9 +178,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 321E528121A97B8F00D20D51 /* Build configuration list for PBXNativeTarget "SCS hackathon" */;
 			buildPhases = (
+				19B80BD4E9316F71B5058DD3 /* [CP] Check Pods Manifest.lock */,
 				321E525321A97B8600D20D51 /* Sources */,
 				321E525421A97B8600D20D51 /* Frameworks */,
 				321E525521A97B8600D20D51 /* Resources */,
+				DAF0FBD312D669702E109661 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -155,6 +197,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 321E528421A97B8F00D20D51 /* Build configuration list for PBXNativeTarget "SCS hackathonTests" */;
 			buildPhases = (
+				249C95E720C7D8CFA7C75C00 /* [CP] Check Pods Manifest.lock */,
 				321E526921A97B8F00D20D51 /* Sources */,
 				321E526A21A97B8F00D20D51 /* Frameworks */,
 				321E526B21A97B8F00D20D51 /* Resources */,
@@ -173,6 +216,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 321E528721A97B8F00D20D51 /* Build configuration list for PBXNativeTarget "SCS hackathonUITests" */;
 			buildPhases = (
+				A0716480A52FEA3238CC091A /* [CP] Check Pods Manifest.lock */,
 				321E527421A97B8F00D20D51 /* Sources */,
 				321E527521A97B8F00D20D51 /* Frameworks */,
 				321E527621A97B8F00D20D51 /* Resources */,
@@ -257,6 +301,81 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		19B80BD4E9316F71B5058DD3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SCS hackathon-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		249C95E720C7D8CFA7C75C00 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SCS hackathonTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A0716480A52FEA3238CC091A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SCS hackathonUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DAF0FBD312D669702E109661 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-SCS hackathon/Pods-SCS hackathon-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/lottie-ios/Lottie.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Lottie.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SCS hackathon/Pods-SCS hackathon-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		321E525321A97B8600D20D51 /* Sources */ = {
@@ -438,15 +557,13 @@
 		};
 		321E528221A97B8F00D20D51 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4A19E68FF84B004E6C7D8214 /* Pods-SCS hackathon.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7K6ZTDFM48;
 				INFOPLIST_FILE = "SCS hackathon/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.sstinc.SCS-hackathon";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -456,15 +573,13 @@
 		};
 		321E528321A97B8F00D20D51 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9A09910851061ADDCE5295C8 /* Pods-SCS hackathon.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7K6ZTDFM48;
 				INFOPLIST_FILE = "SCS hackathon/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.sstinc.SCS-hackathon";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -474,17 +589,14 @@
 		};
 		321E528521A97B8F00D20D51 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 332E36BE5204B692D86781A7 /* Pods-SCS hackathonTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7K6ZTDFM48;
 				INFOPLIST_FILE = "SCS hackathonTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.sstinc.SCS-hackathonTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -495,17 +607,14 @@
 		};
 		321E528621A97B8F00D20D51 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8AEF75CBF238F00A3A94A41B /* Pods-SCS hackathonTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7K6ZTDFM48;
 				INFOPLIST_FILE = "SCS hackathonTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.sstinc.SCS-hackathonTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -516,16 +625,13 @@
 		};
 		321E528821A97B8F00D20D51 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6F038815D4C6AE01F82FF8AA /* Pods-SCS hackathonUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7K6ZTDFM48;
 				INFOPLIST_FILE = "SCS hackathonUITests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.sstinc.SCS-hackathonUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -536,16 +642,13 @@
 		};
 		321E528921A97B8F00D20D51 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AD232C0A5352A6AA3DD0680C /* Pods-SCS hackathonUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7K6ZTDFM48;
 				INFOPLIST_FILE = "SCS hackathonUITests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.sstinc.SCS-hackathonUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
