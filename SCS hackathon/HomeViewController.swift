@@ -7,9 +7,12 @@
 //
 
 import UIKit
+import Lottie
 
 class HomeViewController: UIViewController {
 
+    var isMenuOpen = false
+    @IBOutlet weak var lottieAnimView: LOTAnimationView!
     @IBOutlet weak var searchLocationSearchBar: UISearchBar!
     
     override func viewDidLoad() {
@@ -17,6 +20,7 @@ class HomeViewController: UIViewController {
 
         // Do any additional setup after loading the view.
         searchBarUI()
+        initialiseLottie()
     }
     
     
@@ -40,8 +44,20 @@ class HomeViewController: UIViewController {
         searchBarTextField?.textColor = .white
     }
 
+    func initialiseLottie() {
+        lottieAnimView.setAnimation(named: "menu_hamburger")
+        
+    }
     
-    
+    @IBAction func menuButtonClicked(_ sender: Any) {
+        if isMenuOpen {
+            lottieAnimView.play(fromProgress: 0.5, toProgress: 1, withCompletion: nil)
+        } else {
+            lottieAnimView.play(fromProgress: 0.0, toProgress: 0.5, withCompletion: nil)
+        }
+        isMenuOpen = !isMenuOpen
+        
+    }
     
     /*
     // MARK: - Navigation

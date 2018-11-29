@@ -23,6 +23,9 @@
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Home" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qcn-Kl-waH">
                                         <rect key="frame" x="0.0" y="50" width="375" height="40.666666666666657"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40.670000000000002" id="E1V-nC-krC"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="34"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
@@ -31,14 +34,28 @@
                                         <rect key="frame" x="0.0" y="98.666666666666671" width="375" height="56.000000000000014"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </searchBar>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kdi-Sf-1Ba" customClass="LOTAnimationView">
+                                        <rect key="frame" x="8" y="50" width="40.666666666666664" height="40.666666666666657"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <gestureRecognizers/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="kdi-Sf-1Ba" secondAttribute="height" multiplier="1:1" id="JTa-E1-hsl"/>
+                                        </constraints>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="dlR-26-KbM" appends="YES" id="i52-Ot-4FY"/>
+                                        </connections>
+                                    </view>
                                 </subviews>
                                 <color key="backgroundColor" red="0.81568627450980391" green="0.49411764705882355" blue="0.36078431372549019" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
+                                    <constraint firstItem="kdi-Sf-1Ba" firstAttribute="height" secondItem="Qcn-Kl-waH" secondAttribute="height" id="Dxl-oS-AVp"/>
                                     <constraint firstItem="Qcn-Kl-waH" firstAttribute="leading" secondItem="nuw-n8-ZK3" secondAttribute="leading" id="HnX-R2-yzR"/>
                                     <constraint firstItem="BGV-fF-beG" firstAttribute="leading" secondItem="nuw-n8-ZK3" secondAttribute="leading" id="JCj-bh-MvJ"/>
                                     <constraint firstAttribute="trailing" secondItem="BGV-fF-beG" secondAttribute="trailing" id="Kaf-S6-nid"/>
                                     <constraint firstAttribute="bottom" secondItem="BGV-fF-beG" secondAttribute="bottom" constant="8" id="SsV-kt-vRs"/>
                                     <constraint firstItem="Qcn-Kl-waH" firstAttribute="top" secondItem="nuw-n8-ZK3" secondAttribute="top" constant="50" id="UIY-xa-iYL"/>
+                                    <constraint firstItem="kdi-Sf-1Ba" firstAttribute="leading" secondItem="nuw-n8-ZK3" secondAttribute="leading" constant="8" id="UUD-9j-WCj"/>
+                                    <constraint firstItem="kdi-Sf-1Ba" firstAttribute="top" secondItem="Qcn-Kl-waH" secondAttribute="top" id="dgw-NY-K91"/>
                                     <constraint firstAttribute="trailing" secondItem="Qcn-Kl-waH" secondAttribute="trailing" id="s8K-ao-Kgh"/>
                                     <constraint firstItem="BGV-fF-beG" firstAttribute="top" secondItem="Qcn-Kl-waH" secondAttribute="bottom" constant="8" id="u5R-Cb-jag"/>
                                 </constraints>
@@ -53,10 +70,16 @@
                         <viewLayoutGuide key="safeArea" id="wQA-n4-4uY"/>
                     </view>
                     <connections>
+                        <outlet property="lottieAnimView" destination="kdi-Sf-1Ba" id="5zB-Nf-Zau"/>
                         <outlet property="searchLocationSearchBar" destination="BGV-fF-beG" id="8pA-bq-crh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="157-yF-frJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="dlR-26-KbM">
+                    <connections>
+                        <action selector="menuButtonClicked:" destination="pFJ-ha-uQl" id="TSe-iV-feb"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="-692" y="126.35467980295567"/>
         </scene>
