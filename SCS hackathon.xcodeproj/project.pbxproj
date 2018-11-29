@@ -15,6 +15,7 @@
 		321E526721A97B8E00D20D51 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 321E526521A97B8E00D20D51 /* LaunchScreen.storyboard */; };
 		321E527221A97B8F00D20D51 /* SCS_hackathonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 321E527121A97B8F00D20D51 /* SCS_hackathonTests.swift */; };
 		321E527D21A97B8F00D20D51 /* SCS_hackathonUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 321E527C21A97B8F00D20D51 /* SCS_hackathonUITests.swift */; };
+		323F633121AFBBFD00EC7854 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 323F633021AFBBFD00EC7854 /* HomeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		321E527821A97B8F00D20D51 /* SCS hackathonUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SCS hackathonUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		321E527C21A97B8F00D20D51 /* SCS_hackathonUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCS_hackathonUITests.swift; sourceTree = "<group>"; };
 		321E527E21A97B8F00D20D51 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		323F633021AFBBFD00EC7854 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				321E525C21A97B8600D20D51 /* art.scnassets */,
 				321E525E21A97B8700D20D51 /* ViewController.swift */,
 				321E526021A97B8700D20D51 /* Main.storyboard */,
+				323F633021AFBBFD00EC7854 /* HomeViewController.swift */,
 				321E526321A97B8E00D20D51 /* Assets.xcassets */,
 				321E526521A97B8E00D20D51 /* LaunchScreen.storyboard */,
 				321E526821A97B8E00D20D51 /* Info.plist */,
@@ -262,6 +265,7 @@
 			files = (
 				321E525F21A97B8700D20D51 /* ViewController.swift in Sources */,
 				321E525B21A97B8600D20D51 /* AppDelegate.swift in Sources */,
+				323F633121AFBBFD00EC7854 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="pFJ-ha-uQl">
-    <device id="retina4_7" orientation="portrait">
+    <device id="retina5_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -10,31 +10,66 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Home View Controller-->
         <scene sceneID="QAw-6V-qGz">
             <objects>
-                <viewController id="pFJ-ha-uQl" sceneMemberID="viewController">
+                <viewController id="pFJ-ha-uQl" customClass="HomeViewController" customModule="SCS_hackathon" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="RbO-In-r4L">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nuw-n8-ZK3">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="162.66666666666666"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Home" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qcn-Kl-waH">
+                                        <rect key="frame" x="0.0" y="50" width="375" height="40.666666666666657"/>
+                                        <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="34"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <searchBar contentMode="redraw" searchBarStyle="minimal" placeholder="Search" translatesAutoresizingMaskIntoConstraints="NO" id="BGV-fF-beG">
+                                        <rect key="frame" x="0.0" y="98.666666666666671" width="375" height="56.000000000000014"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </searchBar>
+                                </subviews>
+                                <color key="backgroundColor" red="0.81568627450980391" green="0.49411764705882355" blue="0.36078431372549019" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="Qcn-Kl-waH" firstAttribute="leading" secondItem="nuw-n8-ZK3" secondAttribute="leading" id="HnX-R2-yzR"/>
+                                    <constraint firstItem="BGV-fF-beG" firstAttribute="leading" secondItem="nuw-n8-ZK3" secondAttribute="leading" id="JCj-bh-MvJ"/>
+                                    <constraint firstAttribute="trailing" secondItem="BGV-fF-beG" secondAttribute="trailing" id="Kaf-S6-nid"/>
+                                    <constraint firstAttribute="bottom" secondItem="BGV-fF-beG" secondAttribute="bottom" constant="8" id="SsV-kt-vRs"/>
+                                    <constraint firstItem="Qcn-Kl-waH" firstAttribute="top" secondItem="nuw-n8-ZK3" secondAttribute="top" constant="50" id="UIY-xa-iYL"/>
+                                    <constraint firstAttribute="trailing" secondItem="Qcn-Kl-waH" secondAttribute="trailing" id="s8K-ao-Kgh"/>
+                                    <constraint firstItem="BGV-fF-beG" firstAttribute="top" secondItem="Qcn-Kl-waH" secondAttribute="bottom" constant="8" id="u5R-Cb-jag"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="nuw-n8-ZK3" firstAttribute="leading" secondItem="wQA-n4-4uY" secondAttribute="leading" id="Pjz-b9-Do4"/>
+                            <constraint firstItem="nuw-n8-ZK3" firstAttribute="top" secondItem="RbO-In-r4L" secondAttribute="top" id="aH8-YI-ci1"/>
+                            <constraint firstItem="nuw-n8-ZK3" firstAttribute="trailing" secondItem="wQA-n4-4uY" secondAttribute="trailing" id="y8N-rz-cUh"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="wQA-n4-4uY"/>
                     </view>
+                    <connections>
+                        <outlet property="searchLocationSearchBar" destination="BGV-fF-beG" id="8pA-bq-crh"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="157-yF-frJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-691" y="127"/>
+            <point key="canvasLocation" x="-692" y="126.35467980295567"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="tXr-a1-R10">
             <objects>
                 <viewController id="BV1-FR-VrT" customClass="ViewController" customModule="SCS_hackathon" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="U0K-SW-4ec">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BrB-h1-WRS">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="778"/>
                             </arscnView>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -54,4 +89,5 @@
             </objects>
         </scene>
     </scenes>
+    <color key="tintColor" red="0.81568627450980391" green="0.49411764705882355" blue="0.36078431372549019" alpha="1" colorSpace="calibratedRGB"/>
 </document>
