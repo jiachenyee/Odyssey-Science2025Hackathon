@@ -12,8 +12,18 @@ import Lottie
 class HomeViewController: UIViewController {
 
     var isMenuOpen = false
+    
+    // Menu parts
+    let settingsButton = UIButton()
+    let aboutButton = UIButton()
+    let homeButton = UIButton()
+    let settingsIcon = UIButton()
+    let aboutIcon = UIButton()
+    let homeIcon = UIButton()
+    
     @IBOutlet weak var lottieAnimView: LOTAnimationView!
     @IBOutlet weak var searchLocationSearchBar: UISearchBar!
+    @IBOutlet weak var headerView: UIView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -51,14 +61,40 @@ class HomeViewController: UIViewController {
     
     @IBAction func menuButtonClicked(_ sender: Any) {
         if isMenuOpen {
-            lottieAnimView.play(fromProgress: 0.5, toProgress: 1, withCompletion: nil)
+            lottieAnimView.play(fromProgress: 0.7, toProgress: 1, withCompletion: nil)
+            closeMenu()
         } else {
-            lottieAnimView.play(fromProgress: 0.0, toProgress: 0.5, withCompletion: nil)
+            lottieAnimView.play(fromProgress: 0.2, toProgress: 0.5, withCompletion: nil)
+            openMenu()
         }
         isMenuOpen = !isMenuOpen
         
     }
     
+    func openMenu() {
+        UIView.animate(withDuration: 0.5, delay: 0, options: .curveEaseInOut, animations: {
+            self.headerView.backgroundColor = UIColor(red: 50/255, green: 50/255, blue: 50/255, alpha: 1)
+            self.headerView.frame.size.height += self.headerView.frame.height
+            self.searchLocationSearchBar.alpha = 0
+        }) { (_) in
+            self.searchLocationSearchBar.isHidden = true
+        }
+    }
+    
+    func closeMenu() {
+        UIView.animate(withDuration: 0.5, delay: 0, options: .curveEaseInOut, animations: {
+            self.searchLocationSearchBar.isHidden = false
+            self.headerView.backgroundColor = UIColor(red: 208/255, green: 126/255, blue: 92/255, alpha: 1)
+            self.headerView.frame.size.height = self.headerView.frame.size.height/2
+            self.searchLocationSearchBar.alpha = 1
+        }) { (_) in
+            
+        }
+    }
+    
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
+    }
     /*
     // MARK: - Navigation
 

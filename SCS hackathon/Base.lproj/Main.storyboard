@@ -70,6 +70,7 @@
                         <viewLayoutGuide key="safeArea" id="wQA-n4-4uY"/>
                     </view>
                     <connections>
+                        <outlet property="headerView" destination="nuw-n8-ZK3" id="Cef-Ie-Bvw"/>
                         <outlet property="lottieAnimView" destination="kdi-Sf-1Ba" id="5zB-Nf-Zau"/>
                         <outlet property="searchLocationSearchBar" destination="BGV-fF-beG" id="8pA-bq-crh"/>
                     </connections>
