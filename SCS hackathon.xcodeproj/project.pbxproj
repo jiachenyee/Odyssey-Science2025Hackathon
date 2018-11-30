@@ -16,6 +16,7 @@
 		321E527221A97B8F00D20D51 /* SCS_hackathonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 321E527121A97B8F00D20D51 /* SCS_hackathonTests.swift */; };
 		321E527D21A97B8F00D20D51 /* SCS_hackathonUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 321E527C21A97B8F00D20D51 /* SCS_hackathonUITests.swift */; };
 		323F633121AFBBFD00EC7854 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 323F633021AFBBFD00EC7854 /* HomeViewController.swift */; };
+		3242F25921B12440004FE215 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 32F800A721B1187800E9C5AE /* Assets.xcassets */; };
 		32F8009921AFC27E00E9C5AE /* menu_hamburger.json in Resources */ = {isa = PBXBuildFile; fileRef = 32F8009821AFC27E00E9C5AE /* menu_hamburger.json */; };
 		32F8009B21AFCB5E00E9C5AE /* TriangleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32F8009A21AFCB5E00E9C5AE /* TriangleView.swift */; };
 		32F8009D21B0ECE500E9C5AE /* Menu.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32F8009C21B0ECE500E9C5AE /* Menu.storyboard */; };
@@ -334,6 +335,7 @@
 				321E526721A97B8E00D20D51 /* LaunchScreen.storyboard in Resources */,
 				32F8009D21B0ECE500E9C5AE /* Menu.storyboard in Resources */,
 				32F8009921AFC27E00E9C5AE /* menu_hamburger.json in Resources */,
+				3242F25921B12440004FE215 /* Assets.xcassets in Resources */,
 				321E526221A97B8700D20D51 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -616,7 +618,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7K6ZTDFM48;
-				INFOPLIST_FILE = "SCS hackathon/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/SCS hackathon/Supporting Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -635,7 +638,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7K6ZTDFM48;
-				INFOPLIST_FILE = "SCS hackathon/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/SCS hackathon/Supporting Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

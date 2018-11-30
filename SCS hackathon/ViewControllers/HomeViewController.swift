@@ -8,15 +8,15 @@
 
 import UIKit
 import Lottie
-var isMenuOpen = false
+
 class HomeViewController: UIViewController {
 
-    
-    
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var lottieAnimView: LOTAnimationView!
     @IBOutlet weak var searchLocationSearchBar: UISearchBar!
     @IBOutlet weak var headerView: UIView!
+    
+    var isMenuOpen = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,6 +33,7 @@ class HomeViewController: UIViewController {
             closeMenu()
             isMenuOpen = !isMenuOpen
         }
+        print("appeard")
     }
     
     // MARK: Search Bar customisation
@@ -97,14 +98,19 @@ class HomeViewController: UIViewController {
     override var preferredStatusBarStyle: UIStatusBarStyle {
         return .lightContent
     }
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+        if let identifier = segue.identifier, identifier == "openMenu", let destination = segue.destination as? MenuViewController {
+            destination.onDismiss = {
+                self.lottieAnimView.play(fromProgress: 0.7, toProgress: 1, withCompletion: nil)
+                self.closeMenu()
+                self.isMenuOpen = !self.isMenuOpen
+            }
+        }
     }
-    */
+    
 
 }
