@@ -12,7 +12,16 @@ import ARKit
 
 class ARViewController: UIViewController, ARSCNViewDelegate {
 
+    var isDrawerOpen = true
+    #warning("Add data when available")
+    var exhibits: [createExhibit] = []
+    
+    @IBOutlet weak var navigationView: UIView!
     @IBOutlet var sceneView: ARSCNView!
+    @IBOutlet weak var arrowImageView: UIImageView!
+    @IBOutlet weak var bottomSpaceDrawer: NSLayoutConstraint!
+    @IBOutlet weak var exhibitName: UILabel!
+    @IBOutlet weak var directions: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,6 +37,9 @@ class ARViewController: UIViewController, ARSCNViewDelegate {
         
         // Set the scene to the view
         sceneView.scene = scene
+    
+        // drawer item
+        navigationViewSetup()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -71,5 +83,9 @@ class ARViewController: UIViewController, ARSCNViewDelegate {
     func sessionInterruptionEnded(_ session: ARSession) {
         // Reset tracking and/or remove existing anchors if consistent tracking is required
         
+    }
+    
+    @IBAction func tappedArrow(_ sender: Any) {
+        changeNavigationState()
     }
 }

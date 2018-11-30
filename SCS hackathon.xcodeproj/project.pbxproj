@@ -17,6 +17,9 @@
 		321E527D21A97B8F00D20D51 /* SCS_hackathonUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 321E527C21A97B8F00D20D51 /* SCS_hackathonUITests.swift */; };
 		323F633121AFBBFD00EC7854 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 323F633021AFBBFD00EC7854 /* HomeViewController.swift */; };
 		3242F25921B12440004FE215 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 32F800A721B1187800E9C5AE /* Assets.xcassets */; };
+		3242F25B21B19CA1004FE215 /* Navigation.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3242F25A21B19CA1004FE215 /* Navigation.storyboard */; };
+		3299855421B1A53F009A045E /* NavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3299855321B1A53F009A045E /* NavigationView.swift */; };
+		3299855621B1ACEA009A045E /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3299855521B1ACEA009A045E /* Data.swift */; };
 		32F8009921AFC27E00E9C5AE /* menu_hamburger.json in Resources */ = {isa = PBXBuildFile; fileRef = 32F8009821AFC27E00E9C5AE /* menu_hamburger.json */; };
 		32F8009B21AFCB5E00E9C5AE /* TriangleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32F8009A21AFCB5E00E9C5AE /* TriangleView.swift */; };
 		32F8009D21B0ECE500E9C5AE /* Menu.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32F8009C21B0ECE500E9C5AE /* Menu.storyboard */; };
@@ -57,6 +60,9 @@
 		321E527C21A97B8F00D20D51 /* SCS_hackathonUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCS_hackathonUITests.swift; sourceTree = "<group>"; };
 		321E527E21A97B8F00D20D51 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		323F633021AFBBFD00EC7854 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		3242F25A21B19CA1004FE215 /* Navigation.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Navigation.storyboard; sourceTree = "<group>"; };
+		3299855321B1A53F009A045E /* NavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationView.swift; sourceTree = "<group>"; };
+		3299855521B1ACEA009A045E /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 		32F8009821AFC27E00E9C5AE /* menu_hamburger.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = menu_hamburger.json; sourceTree = "<group>"; };
 		32F8009A21AFCB5E00E9C5AE /* TriangleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TriangleView.swift; sourceTree = "<group>"; };
 		32F8009C21B0ECE500E9C5AE /* Menu.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Menu.storyboard; sourceTree = "<group>"; };
@@ -167,6 +173,7 @@
 		32F800A221B117F500E9C5AE /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
+				3242F25A21B19CA1004FE215 /* Navigation.storyboard */,
 				321E526521A97B8E00D20D51 /* LaunchScreen.storyboard */,
 				321E526021A97B8700D20D51 /* Main.storyboard */,
 				32F8009C21B0ECE500E9C5AE /* Menu.storyboard */,
@@ -180,6 +187,8 @@
 				321E525E21A97B8700D20D51 /* ARViewController.swift */,
 				32F8009E21B0EF1F00E9C5AE /* MenuViewController.swift */,
 				323F633021AFBBFD00EC7854 /* HomeViewController.swift */,
+				3299855321B1A53F009A045E /* NavigationView.swift */,
+				3299855521B1ACEA009A045E /* Data.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -337,6 +346,7 @@
 				32F8009921AFC27E00E9C5AE /* menu_hamburger.json in Resources */,
 				3242F25921B12440004FE215 /* Assets.xcassets in Resources */,
 				321E526221A97B8700D20D51 /* Main.storyboard in Resources */,
+				3242F25B21B19CA1004FE215 /* Navigation.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -436,10 +446,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3299855621B1ACEA009A045E /* Data.swift in Sources */,
 				321E525F21A97B8700D20D51 /* ARViewController.swift in Sources */,
 				32F8009F21B0EF1F00E9C5AE /* MenuViewController.swift in Sources */,
 				321E525B21A97B8600D20D51 /* AppDelegate.swift in Sources */,
 				32F8009B21AFCB5E00E9C5AE /* TriangleView.swift in Sources */,
+				3299855421B1A53F009A045E /* NavigationView.swift in Sources */,
 				323F633121AFBBFD00EC7854 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
