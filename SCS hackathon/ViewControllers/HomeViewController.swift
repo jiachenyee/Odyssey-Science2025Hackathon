@@ -9,8 +9,8 @@
 import UIKit
 import Lottie
 
-class HomeViewController: UIViewController {
-
+class HomeViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
+    
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var lottieAnimView: LOTAnimationView!
     @IBOutlet weak var searchLocationSearchBar: UISearchBar!
@@ -93,6 +93,20 @@ class HomeViewController: UIViewController {
         }) { (_) in
             
         }
+    }
+    
+    
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return 10
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "exhibit", for: indexPath) as! ExhibitsCollectionViewCell
+        
+        cell.exhibitName.text = "Exhibit"
+        cell.exhibitMainImage.layer.cornerRadius = 40
+        cell.exhibitMainImage.clipsToBounds = true
+        return cell
     }
     
     override var preferredStatusBarStyle: UIStatusBarStyle {
