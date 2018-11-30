@@ -8,19 +8,12 @@
 
 import UIKit
 import Lottie
-
+var isMenuOpen = false
 class HomeViewController: UIViewController {
 
-    var isMenuOpen = false
     
-    // Menu parts
-    let settingsButton = UIButton()
-    let aboutButton = UIButton()
-    let homeButton = UIButton()
-    let settingsIcon = UIButton()
-    let aboutIcon = UIButton()
-    let homeIcon = UIButton()
     
+    @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var lottieAnimView: LOTAnimationView!
     @IBOutlet weak var searchLocationSearchBar: UISearchBar!
     @IBOutlet weak var headerView: UIView!
@@ -33,6 +26,14 @@ class HomeViewController: UIViewController {
         initialiseLottie()
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        if isMenuOpen {
+            lottieAnimView.play(fromProgress: 0.7, toProgress: 1, withCompletion: nil)
+            closeMenu()
+            isMenuOpen = !isMenuOpen
+        }
+    }
     
     // MARK: Search Bar customisation
     // Probably stolen code from Tasks... PROBABLY.
@@ -78,6 +79,7 @@ class HomeViewController: UIViewController {
             self.searchLocationSearchBar.alpha = 0
         }) { (_) in
             self.searchLocationSearchBar.isHidden = true
+            self.performSegue(withIdentifier: "openMenu", sender: nil)
         }
     }
     

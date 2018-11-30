@@ -1,10 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="pFJ-ha-uQl">
-    <device id="retina5_9" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -15,14 +11,14 @@
             <objects>
                 <viewController id="pFJ-ha-uQl" customClass="HomeViewController" customModule="SCS_hackathon" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="RbO-In-r4L">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nuw-n8-ZK3">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="162.66666666666666"/>
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="162.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Home" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qcn-Kl-waH">
-                                        <rect key="frame" x="0.0" y="50" width="375" height="40.666666666666657"/>
+                                        <rect key="frame" x="0.0" y="50" width="600" height="40.5"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40.670000000000002" id="E1V-nC-krC"/>
                                         </constraints>
@@ -31,11 +27,11 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <searchBar contentMode="redraw" searchBarStyle="minimal" placeholder="Search" translatesAutoresizingMaskIntoConstraints="NO" id="BGV-fF-beG">
-                                        <rect key="frame" x="0.0" y="98.666666666666671" width="375" height="56.000000000000014"/>
+                                        <rect key="frame" x="0.0" y="98.5" width="600" height="56"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </searchBar>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kdi-Sf-1Ba" customClass="LOTAnimationView">
-                                        <rect key="frame" x="8" y="50" width="40.666666666666664" height="40.666666666666657"/>
+                                        <rect key="frame" x="8" y="50" width="40.5" height="40.5"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <gestureRecognizers/>
                                         <constraints>
@@ -73,6 +69,8 @@
                         <outlet property="headerView" destination="nuw-n8-ZK3" id="Cef-Ie-Bvw"/>
                         <outlet property="lottieAnimView" destination="kdi-Sf-1Ba" id="5zB-Nf-Zau"/>
                         <outlet property="searchLocationSearchBar" destination="BGV-fF-beG" id="8pA-bq-crh"/>
+                        <outlet property="titleLabel" destination="Qcn-Kl-waH" id="Zva-qD-2Mq"/>
+                        <segue destination="spp-1n-3bz" kind="presentation" identifier="openMenu" animates="NO" modalPresentationStyle="overCurrentContext" id="N3U-wW-bPf"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="157-yF-frJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -84,16 +82,24 @@
             </objects>
             <point key="canvasLocation" x="-692" y="126.35467980295567"/>
         </scene>
+        <!--Menu-->
+        <scene sceneID="nHM-Or-Ps4">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Menu" id="spp-1n-3bz" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3oh-GJ-I1o" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-693" y="523"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="tXr-a1-R10">
             <objects>
-                <viewController id="BV1-FR-VrT" customClass="ViewController" customModule="SCS_hackathon" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BV1-FR-VrT" customClass="ARViewController" customModule="SCS_hackathon" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="U0K-SW-4ec">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BrB-h1-WRS">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="778"/>
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                             </arscnView>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

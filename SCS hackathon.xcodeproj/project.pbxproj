@@ -10,14 +10,16 @@
 		218FF70F3277BD14DE0883D8 /* Pods_SCS_hackathonUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FAC6ABB744BBAE3195FEF09 /* Pods_SCS_hackathonUITests.framework */; };
 		321E525B21A97B8600D20D51 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 321E525A21A97B8600D20D51 /* AppDelegate.swift */; };
 		321E525D21A97B8600D20D51 /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 321E525C21A97B8600D20D51 /* art.scnassets */; };
-		321E525F21A97B8700D20D51 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 321E525E21A97B8700D20D51 /* ViewController.swift */; };
+		321E525F21A97B8700D20D51 /* ARViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 321E525E21A97B8700D20D51 /* ARViewController.swift */; };
 		321E526221A97B8700D20D51 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 321E526021A97B8700D20D51 /* Main.storyboard */; };
-		321E526421A97B8E00D20D51 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 321E526321A97B8E00D20D51 /* Assets.xcassets */; };
 		321E526721A97B8E00D20D51 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 321E526521A97B8E00D20D51 /* LaunchScreen.storyboard */; };
 		321E527221A97B8F00D20D51 /* SCS_hackathonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 321E527121A97B8F00D20D51 /* SCS_hackathonTests.swift */; };
 		321E527D21A97B8F00D20D51 /* SCS_hackathonUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 321E527C21A97B8F00D20D51 /* SCS_hackathonUITests.swift */; };
 		323F633121AFBBFD00EC7854 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 323F633021AFBBFD00EC7854 /* HomeViewController.swift */; };
 		32F8009921AFC27E00E9C5AE /* menu_hamburger.json in Resources */ = {isa = PBXBuildFile; fileRef = 32F8009821AFC27E00E9C5AE /* menu_hamburger.json */; };
+		32F8009B21AFCB5E00E9C5AE /* TriangleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32F8009A21AFCB5E00E9C5AE /* TriangleView.swift */; };
+		32F8009D21B0ECE500E9C5AE /* Menu.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32F8009C21B0ECE500E9C5AE /* Menu.storyboard */; };
+		32F8009F21B0EF1F00E9C5AE /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32F8009E21B0EF1F00E9C5AE /* MenuViewController.swift */; };
 		3F9932C98BE3E3EA52EFE932 /* Pods_SCS_hackathon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6904F19B66806FD1D89B1F5 /* Pods_SCS_hackathon.framework */; };
 		5A5890559857AE6208EC7E56 /* Pods_SCS_hackathonTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7ABA77785C04A7A847AF2B85 /* Pods_SCS_hackathonTests.framework */; };
 /* End PBXBuildFile section */
@@ -43,9 +45,8 @@
 		321E525721A97B8600D20D51 /* SCS hackathon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SCS hackathon.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		321E525A21A97B8600D20D51 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		321E525C21A97B8600D20D51 /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
-		321E525E21A97B8700D20D51 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		321E525E21A97B8700D20D51 /* ARViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARViewController.swift; sourceTree = "<group>"; };
 		321E526121A97B8700D20D51 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		321E526321A97B8E00D20D51 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		321E526621A97B8E00D20D51 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		321E526821A97B8E00D20D51 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		321E526D21A97B8F00D20D51 /* SCS hackathonTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SCS hackathonTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -56,6 +57,10 @@
 		321E527E21A97B8F00D20D51 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		323F633021AFBBFD00EC7854 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		32F8009821AFC27E00E9C5AE /* menu_hamburger.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = menu_hamburger.json; sourceTree = "<group>"; };
+		32F8009A21AFCB5E00E9C5AE /* TriangleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TriangleView.swift; sourceTree = "<group>"; };
+		32F8009C21B0ECE500E9C5AE /* Menu.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Menu.storyboard; sourceTree = "<group>"; };
+		32F8009E21B0EF1F00E9C5AE /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		32F800A721B1187800E9C5AE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		332E36BE5204B692D86781A7 /* Pods-SCS hackathonTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SCS hackathonTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SCS hackathonTests/Pods-SCS hackathonTests.debug.xcconfig"; sourceTree = "<group>"; };
 		4A19E68FF84B004E6C7D8214 /* Pods-SCS hackathon.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SCS hackathon.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SCS hackathon/Pods-SCS hackathon.debug.xcconfig"; sourceTree = "<group>"; };
 		4FAC6ABB744BBAE3195FEF09 /* Pods_SCS_hackathonUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SCS_hackathonUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -131,14 +136,11 @@
 			isa = PBXGroup;
 			children = (
 				321E525A21A97B8600D20D51 /* AppDelegate.swift */,
-				321E525C21A97B8600D20D51 /* art.scnassets */,
-				321E525E21A97B8700D20D51 /* ViewController.swift */,
-				32F8009821AFC27E00E9C5AE /* menu_hamburger.json */,
-				321E526021A97B8700D20D51 /* Main.storyboard */,
-				323F633021AFBBFD00EC7854 /* HomeViewController.swift */,
-				321E526321A97B8E00D20D51 /* Assets.xcassets */,
-				321E526521A97B8E00D20D51 /* LaunchScreen.storyboard */,
-				321E526821A97B8E00D20D51 /* Info.plist */,
+				32F800A621B1186900E9C5AE /* Assets */,
+				32F800A221B117F500E9C5AE /* Storyboards */,
+				32F800A321B1180A00E9C5AE /* ViewControllers */,
+				32F800A421B1183800E9C5AE /* Swift Classes */,
+				32F800A521B1185000E9C5AE /* Supporting Files */,
 			);
 			path = "SCS hackathon";
 			sourceTree = "<group>";
@@ -159,6 +161,52 @@
 				321E527E21A97B8F00D20D51 /* Info.plist */,
 			);
 			path = "SCS hackathonUITests";
+			sourceTree = "<group>";
+		};
+		32F800A221B117F500E9C5AE /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				321E526521A97B8E00D20D51 /* LaunchScreen.storyboard */,
+				321E526021A97B8700D20D51 /* Main.storyboard */,
+				32F8009C21B0ECE500E9C5AE /* Menu.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		32F800A321B1180A00E9C5AE /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				321E525E21A97B8700D20D51 /* ARViewController.swift */,
+				32F8009E21B0EF1F00E9C5AE /* MenuViewController.swift */,
+				323F633021AFBBFD00EC7854 /* HomeViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		32F800A421B1183800E9C5AE /* Swift Classes */ = {
+			isa = PBXGroup;
+			children = (
+				32F8009A21AFCB5E00E9C5AE /* TriangleView.swift */,
+			);
+			path = "Swift Classes";
+			sourceTree = "<group>";
+		};
+		32F800A521B1185000E9C5AE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				321E526821A97B8E00D20D51 /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		32F800A621B1186900E9C5AE /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				32F8009821AFC27E00E9C5AE /* menu_hamburger.json */,
+				32F800A721B1187800E9C5AE /* Assets.xcassets */,
+				321E525C21A97B8600D20D51 /* art.scnassets */,
+			);
+			path = Assets;
 			sourceTree = "<group>";
 		};
 		653D4DC7987D8619E5EB3DF4 /* Pods */ = {
@@ -284,7 +332,7 @@
 			files = (
 				321E525D21A97B8600D20D51 /* art.scnassets in Resources */,
 				321E526721A97B8E00D20D51 /* LaunchScreen.storyboard in Resources */,
-				321E526421A97B8E00D20D51 /* Assets.xcassets in Resources */,
+				32F8009D21B0ECE500E9C5AE /* Menu.storyboard in Resources */,
 				32F8009921AFC27E00E9C5AE /* menu_hamburger.json in Resources */,
 				321E526221A97B8700D20D51 /* Main.storyboard in Resources */,
 			);
@@ -386,8 +434,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				321E525F21A97B8700D20D51 /* ViewController.swift in Sources */,
+				321E525F21A97B8700D20D51 /* ARViewController.swift in Sources */,
+				32F8009F21B0EF1F00E9C5AE /* MenuViewController.swift in Sources */,
 				321E525B21A97B8600D20D51 /* AppDelegate.swift in Sources */,
+				32F8009B21AFCB5E00E9C5AE /* TriangleView.swift in Sources */,
 				323F633121AFBBFD00EC7854 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
