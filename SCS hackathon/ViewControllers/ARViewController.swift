@@ -88,4 +88,9 @@ class ARViewController: UIViewController, ARSCNViewDelegate {
     @IBAction func tappedArrow(_ sender: Any) {
         changeNavigationState()
     }
+
+    @IBAction func backButtonClicked(_ sender: Any) {
+        navigationController?.popViewController(animated: true)
+    }
+    
 }
