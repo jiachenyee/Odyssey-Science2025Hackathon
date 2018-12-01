@@ -21,6 +21,5 @@ var exhibits: [createExhibit] = [
     createExhibit(exhibitTitle: "Lithophone", exhibitDescription: "Did you know ", exhibitImage: UIImage(named: "IMG_7706.HEIC")!),
     createExhibit(exhibitTitle: "Time Capsule", exhibitDescription: "", exhibitImage: UIImage(named: "IMG_2861.HEIC")!),
     createExhibit(exhibitTitle: "Fountain", exhibitDescription: "", exhibitImage: UIImage(named: "IMG_4621.HEIC")!),
-    createExhibit(exhibitTitle: "Dragon", exhibitDescription: "", exhibitImage: UIImage(named: "IMG_5817.HEIC")!),
-    createExhibit(exhibitTitle: "Chair", exhibitDescription: "dumb", exhibitImage: UIImage(named: "aureliusStickers.004.png")!)
+    createExhibit(exhibitTitle: "Dragon", exhibitDescription: "", exhibitImage: UIImage(named: "IMG_5817.HEIC")!)
     ]
