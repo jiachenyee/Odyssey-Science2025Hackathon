@@ -1,16 +1,20 @@
 PODS:
-  - lottie-ios (2.5.0)
+  - ARCL (1.0.4)
+  - lottie-ios (2.5.2)
 
 DEPENDENCIES:
+  - ARCL
   - lottie-ios
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
+    - ARCL
     - lottie-ios
 
 SPEC CHECKSUMS:
-  lottie-ios: d699fdee68d7b63e721d949388b015fef1aaa4ac
+  ARCL: 5fd2b0d7aabf91f15dbc0e8c510b25516b8a755a
+  lottie-ios: 3fef45d3fabe63e3c7c2eb603dd64ddfffc73062
 
-PODFILE CHECKSUM: 51f1dc26087ebe26cb6e614b0d485ada358fedd5
+PODFILE CHECKSUM: e41ab89aadf8409fcf1cbe8ca4522f09c0cd92ec
 
 COCOAPODS: 1.5.3
