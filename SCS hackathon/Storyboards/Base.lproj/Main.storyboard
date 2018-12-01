@@ -392,18 +392,51 @@
                         <outlet property="mainStackView" destination="sVg-lB-ECF" id="Z7a-0e-BhW"/>
                         <outlet property="mapScrollView" destination="CtV-4g-jVS" id="uJC-8f-HNV"/>
                         <outlet property="zoomView" destination="iHV-yu-0Ua" id="BhG-w0-M67"/>
+                        <segue destination="IKB-ad-7cJ" kind="presentation" modalPresentationStyle="overCurrentContext" id="asp-FH-i6z"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cEk-ua-Jbe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="252" y="821.30541871921184"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="0DS-G6-XwV">
+            <objects>
+                <viewController id="IKB-ad-7cJ" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="NI4-Z6-oEs">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="649.33333333333326"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vmh-x6-hCd">
+                                <rect key="frame" x="16" y="128" width="343" height="433"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="QUO-d2-4Mw">
+                                        <rect key="frame" x="0.0" y="196" width="335" height="237"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="GD3-yn-F5Z"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JxQ-9Y-Gwu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1108" y="861.94581280788179"/>
+        </scene>
     </scenes>
     <resources>
         <image name="arrow" width="1900" height="1900"/>
         <image name="aureliusStickers.004.png" width="512" height="512"/>
         <image name="backArrow" width="1900" height="1900"/>
-        <image name="map-levelthree" width="2000" height="2000"/>
+        <image name="map-levelthree" width="6000" height="6000"/>
     </resources>
     <color key="tintColor" red="0.81568627450980391" green="0.49411764705882355" blue="0.36078431372549019" alpha="1" colorSpace="calibratedRGB"/>
 </document>
