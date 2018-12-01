@@ -9,7 +9,7 @@
 import UIKit
 import SceneKit
 import ARKit
-
+import ARCL
 
 @available(iOS 12.0, *)
 class ARViewController: UIViewController, ARSCNViewDelegate {
@@ -156,3 +156,52 @@ class ARViewController: UIViewController, ARSCNViewDelegate {
     }
     
 }
+// MARK: - Data Helpers
+@available(iOS 11.0, *)
+private extension ViewController {
+    func buildDemoData() -> [LocationAnnotationNode] {
+        var nodes: [LocationAnnotationNode] = []
+        
+        // TODO: add a few more demo points of interest.
+        // TODO: use more varied imagery.
+        
+        let spaceNeedle = buildNode(latitude: 47.6205, longitude: -122.3493, altitude: 225, imageName: "pin")
+        nodes.append(spaceNeedle)
+        
+        let empireStateBuilding = buildNode(latitude: 40.7484, longitude: -73.9857, altitude: 14.3, imageName: "pin")
+        nodes.append(empireStateBuilding)
+        
+        let canaryWharf = buildNode(latitude: 51.504607, longitude: -0.019592, altitude: 236, imageName: "pin")
+        nodes.append(canaryWharf)
+        
+        return nodes
+    }
+    
+    func buildNode(latitude: CLLocationDegrees, longitude: CLLocationDegrees, altitude: CLLocationDistance, imageName: String) -> LocationAnnotationNode {
+        let coordinate = CLLocationCoordinate2D(latitude: latitude, longitude: longitude)
+        let location = CLLocation(coordinate: coordinate, altitude: altitude)
+        let image = UIImage(named: imageName)!
+        return LocationAnnotationNode(location: location, image: image)
+    }
+}
+
+extension DispatchQueue {
+    func asyncAfter(timeInterval: TimeInterval, execute: @escaping () -> Void) {
+        self.asyncAfter(
+            deadline: DispatchTime.now() + Double(Int64(timeInterval * Double(NSEC_PER_SEC))) / Double(NSEC_PER_SEC), execute: execute)
+    }
+}
+
+extension UIView {
+    func recursiveSubviews() -> [UIView] {
+        var recursiveSubviews = self.subviews
+        
+        for subview in subviews {
+            recursiveSubviews.append(contentsOf: subview.recursiveSubviews())
+        }
+        
+        return recursiveSubviews
+    }
+}
+
+
