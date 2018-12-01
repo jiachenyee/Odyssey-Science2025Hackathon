@@ -373,10 +373,15 @@ import UIKit
 import SceneKit
 import ARKit
 import ARCL
+import CoreLocation
+
+var launchFromAR = false
 
 @available(iOS 12.0, *)
-class ARViewController: UIViewController, ARSCNViewDelegate {
+class ARViewController: UIViewController, ARSCNViewDelegate, CLLocationManagerDelegate {
     
+    var locationManager:CLLocationManager = CLLocationManager()
+    var discoveredBeacons:[CLBeacon] = []
     var isDrawerOpen = true
     var somewonk: Int = 1
     var ArrowNode: SCNNode!
@@ -393,6 +398,13 @@ class ARViewController: UIViewController, ARSCNViewDelegate {
     @IBOutlet weak var bottomSpaceDrawer: NSLayoutConstraint!
     @IBOutlet weak var exhibitName: UILabel!
     @IBOutlet weak var directions: UILabel!
+    let blurView: UIVisualEffectView = {
+        let blurView = UIVisualEffectView()
+        blurView.effect = UIBlurEffect(style: .dark)
+        blurView.alpha = 0
+        blurView.isUserInteractionEnabled = false
+        return blurView
+    }()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -408,6 +420,9 @@ class ARViewController: UIViewController, ARSCNViewDelegate {
         
         // drawer item
         navigationViewSetup()
+        
+        // Beacon
+        locationManager.delegate = self
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -487,6 +502,9 @@ class ARViewController: UIViewController, ARSCNViewDelegate {
         }
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        launchFromAR = true
+    }
     func session(_ session: ARSession, didFailWithError error: Error) {
         // Present an error message to the user
         
@@ -510,6 +528,20 @@ class ARViewController: UIViewController, ARSCNViewDelegate {
 
     @IBAction func backButtonClicked(_ sender: Any) {
         navigationController?.popViewController(animated: true)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let identifier = segue.identifier, identifier == "newTask", let destination = segue.destination as? AlertViewController {
+            destination.onDismiss = {
+                UIView.animate(withDuration: 0.2, delay: 0, options: .curveEaseInOut, animations: {
+                    
+                    self.blurView.alpha = 0
+                    
+                }) { (_) in
+                    
+                }
+            }
+        }
     }
     
 }
