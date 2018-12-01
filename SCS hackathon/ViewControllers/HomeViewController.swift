@@ -17,17 +17,12 @@ class HomeViewController: UIViewController, UICollectionViewDelegate, UICollecti
     @IBOutlet weak var searchLocationSearchBar: UISearchBar!
     @IBOutlet weak var headerView: UIView!
     
-    
-    var locationManager:CLLocationManager = CLLocationManager()
-    var discoveredBeacons:[CLBeacon] = []
     var isMenuOpen = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        locationManager.delegate = self
-        locationManager.requestAlwaysAuthorization()
         
         searchBarUI()
         initialiseLottie()
@@ -123,34 +118,6 @@ class HomeViewController: UIViewController, UICollectionViewDelegate, UICollecti
     
     override var preferredStatusBarStyle: UIStatusBarStyle {
         return .lightContent
-    }
-    
-    func rangeBeacons() {
-        
-        let uuid = UUID(uuidString: "F34A1A1F-500F-48FB-AFAA-9584D641D7B1")
-        let identifier = "com.test.ben"
-        
-        let region = CLBeaconRegion(proximityUUID: uuid!, identifier: identifier)
-        
-        locationManager.startRangingBeacons(in: region)
-    }
-    
-    func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
-        if status == .authorizedAlways {
-            rangeBeacons()
-        }
-    }
-    
-    func locationManager(_ manager: CLLocationManager, didRangeBeacons beacons: [CLBeacon], in region: CLBeaconRegion) {
-        
-        discoveredBeacons = beacons
-        
-        if discoveredBeacons.count > 0 {
-            print("yayy")
-        } else {
-            print("no beacons")
-        }
-
     }
     
     // MARK: - Navigation

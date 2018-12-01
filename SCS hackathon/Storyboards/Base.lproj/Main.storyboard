@@ -18,6 +18,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MzX-xt-E7I">
+                                <rect key="frame" x="0.0" y="162.66666666666669" width="375" height="649.33333333333326"/>
+                                <connections>
+                                    <segue destination="Maq-1I-rWc" kind="embed" id="Jai-w7-eH6"/>
+                                </connections>
+                            </containerView>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="9ML-XX-edf">
                                 <rect key="frame" x="0.0" y="182.66666666666666" width="375" height="119.99999999999997"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -135,7 +141,9 @@
                         </subviews>
                         <color key="backgroundColor" red="0.19607843137254902" green="0.19607843137254902" blue="0.19607843137254902" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstAttribute="bottom" secondItem="MzX-xt-E7I" secondAttribute="bottom" id="4yc-Az-Q2T"/>
                             <constraint firstItem="9ML-XX-edf" firstAttribute="leading" secondItem="wQA-n4-4uY" secondAttribute="leading" id="5Iq-BK-uqg"/>
+                            <constraint firstItem="MzX-xt-E7I" firstAttribute="top" secondItem="nuw-n8-ZK3" secondAttribute="bottom" constant="2.8421709430404007e-14" id="CIw-Mv-mgm"/>
                             <constraint firstItem="nuw-n8-ZK3" firstAttribute="leading" secondItem="wQA-n4-4uY" secondAttribute="leading" id="Pjz-b9-Do4"/>
                             <constraint firstItem="nuw-n8-ZK3" firstAttribute="top" secondItem="RbO-In-r4L" secondAttribute="top" id="aH8-YI-ci1"/>
                             <constraint firstItem="aHH-p5-Rus" firstAttribute="trailing" secondItem="wQA-n4-4uY" secondAttribute="trailing" id="bUa-Cx-UeY"/>
@@ -143,8 +151,10 @@
                             <constraint firstItem="aHH-p5-Rus" firstAttribute="top" secondItem="nuw-n8-ZK3" secondAttribute="bottom" id="iaj-08-H3e"/>
                             <constraint firstItem="aHH-p5-Rus" firstAttribute="leading" secondItem="wQA-n4-4uY" secondAttribute="leading" id="jj8-db-MCx"/>
                             <constraint firstItem="9ML-XX-edf" firstAttribute="top" secondItem="nuw-n8-ZK3" secondAttribute="bottom" constant="20" id="rks-7s-h9v"/>
+                            <constraint firstItem="MzX-xt-E7I" firstAttribute="trailing" secondItem="wQA-n4-4uY" secondAttribute="trailing" id="toU-TZ-if1"/>
                             <constraint firstItem="nuw-n8-ZK3" firstAttribute="trailing" secondItem="wQA-n4-4uY" secondAttribute="trailing" id="y8N-rz-cUh"/>
                             <constraint firstAttribute="bottom" secondItem="aHH-p5-Rus" secondAttribute="bottom" id="yRs-f7-jxX"/>
+                            <constraint firstItem="MzX-xt-E7I" firstAttribute="leading" secondItem="wQA-n4-4uY" secondAttribute="leading" id="zfK-s5-tY2"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="wQA-n4-4uY"/>
                     </view>
@@ -313,11 +323,87 @@
             </objects>
             <point key="canvasLocation" x="1206" y="126"/>
         </scene>
+        <!--Embeded Map View Controller-->
+        <scene sceneID="40u-8Q-fSq">
+            <objects>
+                <viewController id="Maq-1I-rWc" customClass="EmbededMapViewController" customModule="SCS_hackathon" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9ba-Wb-ZLa">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="649.33333333333326"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CtV-4g-jVS">
+                                <rect key="frame" x="0.0" y="137.33333333333337" width="375" height="375"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iHV-yu-0Ua">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="375"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="map-levelthree" translatesAutoresizingMaskIntoConstraints="NO" id="EZ3-O7-LFJ">
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="375"/>
+                                            </imageView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sVg-lB-ECF">
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="375"/>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="EZ3-O7-LFJ" firstAttribute="top" secondItem="sVg-lB-ECF" secondAttribute="top" id="4AI-So-pZl"/>
+                                            <constraint firstAttribute="trailing" secondItem="EZ3-O7-LFJ" secondAttribute="trailing" id="5Ue-5M-7TC"/>
+                                            <constraint firstItem="sVg-lB-ECF" firstAttribute="height" secondItem="EZ3-O7-LFJ" secondAttribute="height" id="7RD-e6-NLG"/>
+                                            <constraint firstItem="EZ3-O7-LFJ" firstAttribute="centerX" secondItem="iHV-yu-0Ua" secondAttribute="centerX" id="Fzs-pD-2hH"/>
+                                            <constraint firstAttribute="bottom" secondItem="EZ3-O7-LFJ" secondAttribute="bottom" id="HoL-eD-9Ei"/>
+                                            <constraint firstItem="EZ3-O7-LFJ" firstAttribute="leading" secondItem="sVg-lB-ECF" secondAttribute="leading" id="Iaa-kO-82Z"/>
+                                            <constraint firstAttribute="bottom" secondItem="sVg-lB-ECF" secondAttribute="bottom" id="KU9-w4-JEX"/>
+                                            <constraint firstItem="sVg-lB-ECF" firstAttribute="centerY" secondItem="iHV-yu-0Ua" secondAttribute="centerY" id="LH4-Ve-Xam"/>
+                                            <constraint firstItem="EZ3-O7-LFJ" firstAttribute="top" secondItem="iHV-yu-0Ua" secondAttribute="top" id="PrG-AS-eQy"/>
+                                            <constraint firstItem="sVg-lB-ECF" firstAttribute="leading" secondItem="iHV-yu-0Ua" secondAttribute="leading" id="SfG-qk-oyd"/>
+                                            <constraint firstAttribute="trailing" secondItem="sVg-lB-ECF" secondAttribute="trailing" id="T8U-nI-MHW"/>
+                                            <constraint firstAttribute="bottom" secondItem="EZ3-O7-LFJ" secondAttribute="bottom" id="XRd-uq-Hck"/>
+                                            <constraint firstItem="sVg-lB-ECF" firstAttribute="top" secondItem="iHV-yu-0Ua" secondAttribute="top" id="bE9-hN-Iac"/>
+                                            <constraint firstAttribute="trailing" secondItem="EZ3-O7-LFJ" secondAttribute="trailing" id="bPc-UH-ifn"/>
+                                            <constraint firstItem="EZ3-O7-LFJ" firstAttribute="leading" secondItem="iHV-yu-0Ua" secondAttribute="leading" id="gd1-cw-6NX"/>
+                                            <constraint firstItem="EZ3-O7-LFJ" firstAttribute="leading" secondItem="iHV-yu-0Ua" secondAttribute="leading" id="u1e-Zd-h5R"/>
+                                            <constraint firstItem="sVg-lB-ECF" firstAttribute="width" secondItem="EZ3-O7-LFJ" secondAttribute="width" id="zYs-M5-ti9"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="iHV-yu-0Ua" firstAttribute="width" secondItem="CtV-4g-jVS" secondAttribute="width" id="3nf-c2-Hn5"/>
+                                    <constraint firstItem="iHV-yu-0Ua" firstAttribute="height" secondItem="CtV-4g-jVS" secondAttribute="height" id="4fL-y5-05V"/>
+                                    <constraint firstItem="iHV-yu-0Ua" firstAttribute="centerY" secondItem="CtV-4g-jVS" secondAttribute="centerY" id="DA2-g3-3w2"/>
+                                    <constraint firstAttribute="bottom" secondItem="iHV-yu-0Ua" secondAttribute="bottom" constant="-20" id="O3d-f7-Cjg"/>
+                                    <constraint firstAttribute="width" secondItem="CtV-4g-jVS" secondAttribute="height" multiplier="1:1" id="VWE-L7-Gjc"/>
+                                    <constraint firstAttribute="trailing" secondItem="iHV-yu-0Ua" secondAttribute="trailing" constant="-20" id="ksl-iO-JEa"/>
+                                    <constraint firstItem="iHV-yu-0Ua" firstAttribute="centerX" secondItem="CtV-4g-jVS" secondAttribute="centerX" id="rWg-Yc-0jY"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="delegate" destination="Maq-1I-rWc" id="l3n-mv-Xon"/>
+                                </connections>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.19607843137254902" green="0.19607843137254902" blue="0.19607843137254902" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="CtV-4g-jVS" firstAttribute="centerY" secondItem="9ba-Wb-ZLa" secondAttribute="centerY" id="4Fv-VG-qcH"/>
+                            <constraint firstItem="CtV-4g-jVS" firstAttribute="leading" secondItem="9ba-Wb-ZLa" secondAttribute="leading" id="4wP-H8-wX6"/>
+                            <constraint firstItem="CtV-4g-jVS" firstAttribute="centerX" secondItem="9ba-Wb-ZLa" secondAttribute="centerX" id="HJE-Wt-3mX"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="olH-fA-ivk"/>
+                    </view>
+                    <connections>
+                        <outlet property="mainStackView" destination="sVg-lB-ECF" id="Z7a-0e-BhW"/>
+                        <outlet property="mapScrollView" destination="CtV-4g-jVS" id="uJC-8f-HNV"/>
+                        <outlet property="zoomView" destination="iHV-yu-0Ua" id="BhG-w0-M67"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cEk-ua-Jbe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="252" y="821.30541871921184"/>
+        </scene>
     </scenes>
     <resources>
         <image name="arrow" width="1900" height="1900"/>
         <image name="aureliusStickers.004.png" width="512" height="512"/>
         <image name="backArrow" width="1900" height="1900"/>
+        <image name="map-levelthree" width="2000" height="2000"/>
     </resources>
     <color key="tintColor" red="0.81568627450980391" green="0.49411764705882355" blue="0.36078431372549019" alpha="1" colorSpace="calibratedRGB"/>
 </document>

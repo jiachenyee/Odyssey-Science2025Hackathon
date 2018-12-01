@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		218FF70F3277BD14DE0883D8 /* Pods_SCS_hackathonUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FAC6ABB744BBAE3195FEF09 /* Pods_SCS_hackathonUITests.framework */; };
+		320A13E521B2B7010003924B /* EmbededMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 320A13E421B2B7010003924B /* EmbededMapViewController.swift */; };
 		321E525B21A97B8600D20D51 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 321E525A21A97B8600D20D51 /* AppDelegate.swift */; };
 		321E525D21A97B8600D20D51 /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 321E525C21A97B8600D20D51 /* art.scnassets */; };
 		321E525F21A97B8700D20D51 /* ARViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 321E525E21A97B8700D20D51 /* ARViewController.swift */; };
@@ -71,6 +72,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		320A13E421B2B7010003924B /* EmbededMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmbededMapViewController.swift; sourceTree = "<group>"; };
 		321E525721A97B8600D20D51 /* SCS hackathon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SCS hackathon.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		321E525A21A97B8600D20D51 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		321E525C21A97B8600D20D51 /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
@@ -266,6 +268,7 @@
 				321E525E21A97B8700D20D51 /* ARViewController.swift */,
 				32F8009E21B0EF1F00E9C5AE /* MenuViewController.swift */,
 				323F633021AFBBFD00EC7854 /* HomeViewController.swift */,
+				320A13E421B2B7010003924B /* EmbededMapViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -563,6 +566,7 @@
 				32F8009B21AFCB5E00E9C5AE /* TriangleView.swift in Sources */,
 				3299855421B1A53F009A045E /* NavigationView.swift in Sources */,
 				323F633121AFBBFD00EC7854 /* HomeViewController.swift in Sources */,
+				320A13E521B2B7010003924B /* EmbededMapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
