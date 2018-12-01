@@ -7,6 +7,8 @@ target 'SCS hackathon' do
 
   # Pods for SCS hackathon
   pod 'lottie-ios'
+  pod 'ARCL'
+  
 
   target 'SCS hackathonTests' do
     inherit! :search_paths
