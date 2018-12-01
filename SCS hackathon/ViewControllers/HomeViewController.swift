@@ -8,20 +8,27 @@
 
 import UIKit
 import Lottie
+import CoreLocation
 
-class HomeViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
+class HomeViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, CLLocationManagerDelegate {
     
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var lottieAnimView: LOTAnimationView!
     @IBOutlet weak var searchLocationSearchBar: UISearchBar!
     @IBOutlet weak var headerView: UIView!
     
+    
+    var locationManager:CLLocationManager = CLLocationManager()
+    var discoveredBeacons:[CLBeacon] = []
     var isMenuOpen = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        locationManager.delegate = self
+        locationManager.requestAlwaysAuthorization()
+        
         searchBarUI()
         initialiseLottie()
     }
@@ -118,9 +125,35 @@ class HomeViewController: UIViewController, UICollectionViewDelegate, UICollecti
         return .lightContent
     }
     
-    // MARK: - Navigation
+    func rangeBeacons() {
+        
+        let uuid = UUID(uuidString: "F34A1A1F-500F-48FB-AFAA-9584D641D7B1")
+        let identifier = "com.test.ben"
+        
+        let region = CLBeaconRegion(proximityUUID: uuid!, identifier: identifier)
+        
+        locationManager.startRangingBeacons(in: region)
+    }
+    
+    func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
+        if status == .authorizedAlways {
+            rangeBeacons()
+        }
+    }
+    
+    func locationManager(_ manager: CLLocationManager, didRangeBeacons beacons: [CLBeacon], in region: CLBeaconRegion) {
+        
+        discoveredBeacons = beacons
+        
+        if discoveredBeacons.count > 0 {
+            print("yayy")
+        } else {
+            print("no beacons")
+        }
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    }
+    
+    // MARK: - Navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let identifier = segue.identifier, identifier == "openMenu", let destination = segue.destination as? MenuViewController {
             destination.onDismiss = {

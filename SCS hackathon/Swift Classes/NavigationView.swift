@@ -9,6 +9,7 @@
 import Foundation
 import UIKit
 
+@available(iOS 12.0, *)
 extension ARViewController {
     
     func navigationViewSetup() {
