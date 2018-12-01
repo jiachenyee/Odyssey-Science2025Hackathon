@@ -287,7 +287,7 @@
                                 </constraints>
                                 <state key="normal" image="backArrow"/>
                                 <connections>
-                                    <action selector="backButtonClicked:" destination="TUg-Ho-VHq" eventType="touchUpInside" id="BvD-wM-yz8"/>
+                                    <action selector="backButtonClicked:" destination="TUg-Ho-VHq" eventType="touchUpInside" id="egh-Vk-HJQ"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -311,7 +311,7 @@
                         <outlet property="directions" destination="dTv-rG-0Qa" id="X9U-uu-phn"/>
                         <outlet property="exhibitName" destination="mti-Ag-crP" id="Zs7-N4-RZ2"/>
                         <outlet property="navigationView" destination="8oX-rW-aFB" id="Ete-vm-J26"/>
-                        <outlet property="sceneView" destination="0Fe-kp-b5A" id="nx4-M8-Act"/>
+                        <outlet property="sceneView" destination="0Fe-kp-b5A" id="a4W-1L-fJ7"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4ho-xb-foX" sceneMemberID="firstResponder"/>
