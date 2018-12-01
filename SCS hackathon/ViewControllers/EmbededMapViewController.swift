@@ -240,8 +240,8 @@ class EmbededMapViewController: UIViewController, CLLocationManagerDelegate, UIS
         }
     }
     @IBAction func showGuides(_ sender: UIButton) {
-        if sender.titleLabel?.text == "Show guide beacons" {
-            sender.setTitle("Hide guide beacons", for: .normal)
+        if sender.titleLabel?.text == "Hide guide beacons" {
+            sender.setTitle("Show guide beacons", for: .normal)
             guideBeacon1.alpha = 0
             guideBeacon2.alpha = 0
             guideBeacon3.alpha = 0
@@ -252,7 +252,7 @@ class EmbededMapViewController: UIViewController, CLLocationManagerDelegate, UIS
             guideBeacon8.alpha = 0
             
         } else {
-            sender.setTitle("Show guide beacons", for: .normal)
+            sender.setTitle("Hide guide beacons", for: .normal)
             guideBeacon1.alpha = 1
             guideBeacon2.alpha = 1
             guideBeacon3.alpha = 1
@@ -266,12 +266,12 @@ class EmbededMapViewController: UIViewController, CLLocationManagerDelegate, UIS
     }
     
     @IBAction func showExhibits(_ sender: UIButton) {
-        if sender.titleLabel?.text == "Show exhibits" {
-            sender.setTitle("Hide exhibits", for: .normal)
+        if sender.titleLabel?.text == "Hide exhibits" {
+            sender.setTitle("Show exhibits", for: .normal)
             exhibitBeacon1.alpha = 0
             exhibitBeacon2.alpha = 0
         } else {
-            sender.setTitle("Show exhibits", for: .normal)
+            sender.setTitle("Hide exhibits", for: .normal)
             exhibitBeacon1.alpha = 1
             exhibitBeacon2.alpha = 1
         }

@@ -375,14 +375,14 @@
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OrU-eG-qpf">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="30"/>
-                                        <state key="normal" title="Show guide beacons"/>
+                                        <state key="normal" title="Hide guide beacons"/>
                                         <connections>
                                             <action selector="showGuides:" destination="Maq-1I-rWc" eventType="touchUpInside" id="eOY-kT-tn3"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hJ1-Y1-4d3">
                                         <rect key="frame" x="0.0" y="46" width="414" height="47.5"/>
-                                        <state key="normal" title="Hide exhibits"/>
+                                        <state key="normal" title="Show exhibits"/>
                                         <connections>
                                             <action selector="showExhibits:" destination="Maq-1I-rWc" eventType="touchUpInside" id="LlX-vd-QEN"/>
                                         </connections>
