@@ -97,16 +97,21 @@ class HomeViewController: UIViewController, UICollectionViewDelegate, UICollecti
     
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 10
+        return exhibits.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "exhibit", for: indexPath) as! ExhibitsCollectionViewCell
         
-        cell.exhibitName.text = "Exhibit"
+        cell.exhibitName.text = exhibits[indexPath.row].exhibitTitle.uppercased()
         cell.exhibitMainImage.layer.cornerRadius = 40
         cell.exhibitMainImage.clipsToBounds = true
+        cell.exhibitMainImage.image = exhibits[indexPath.row].exhibitImage
         return cell
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        performSegue(withIdentifier: "selected", sender: nil)
     }
     
     override var preferredStatusBarStyle: UIStatusBarStyle {

@@ -10,11 +10,12 @@ import UIKit
 import SceneKit
 import ARKit
 
+
 class ARViewController: UIViewController, ARSCNViewDelegate {
 
     var isDrawerOpen = true
     #warning("Add data when available")
-    var exhibits: [createExhibit] = []
+    
     
     @IBOutlet weak var navigationView: UIView!
     @IBOutlet var sceneView: ARSCNView!
