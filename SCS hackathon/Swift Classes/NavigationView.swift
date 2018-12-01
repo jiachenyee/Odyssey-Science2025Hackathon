@@ -15,6 +15,7 @@ extension ARViewController {
     func navigationViewSetup() {
         navigationView.layer.cornerRadius = 20
         arrowImageView.transform = CGAffineTransform(rotationAngle: 180 * CGFloat(Double.pi/180))
+        exhibitIcon.layer.cornerRadius = 20
     }
     
     func changeNavigationState() {

@@ -386,6 +386,7 @@ class ARViewController: UIViewController, ARSCNViewDelegate {
     #warning("Add data when available")
     
     
+    @IBOutlet weak var exhibitIcon: UIImageView!
     @IBOutlet weak var navigationView: UIView!
     @IBOutlet weak var sceneView: ARSCNView!
     @IBOutlet weak var arrowImageView: UIImageView!

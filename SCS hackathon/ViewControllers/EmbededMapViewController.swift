@@ -9,6 +9,8 @@
 import UIKit
 import CoreLocation
 
+var minorValue = 0
+
 class EmbededMapViewController: UIViewController, CLLocationManagerDelegate, UIScrollViewDelegate {
     
     var locationManager:CLLocationManager = CLLocationManager()
@@ -63,14 +65,16 @@ class EmbededMapViewController: UIViewController, CLLocationManagerDelegate, UIS
             for beacon in discoveredBeacons {
                 if beacon.major == 1 {
                     // IS EXHIBIT
-                    if beacon.minor == 1 {
-                        // iPhone XR
-                        let desc = "All-new Liquid Retina display — the most advanced LCD in the industry. Even faster Face ID. The smartest, most powerful chip in a smartphone. And a breakthrough camera system with Depth Control. iPhone XR. It’s beautiful any way you look at it."
+                    
+                    // Minor 1 = iPhone XR, Minor 2 = MacBook Pro
+                    if beacon.proximity == .immediate {
+                        minorValue = Int(truncating: beacon.minor)
+                        performSegue(withIdentifier: "Exhibit", sender: nil)
+
                     } else {
-                        // MacBook Pro
-                        let desc = "MacBook Pro elevates the notebook to a whole new level of performance and portability. Wherever your ideas take you, you’ll get there faster than ever with high‑performance processors and memory, advanced graphics, blazing‑fast storage, and more."
+                        print("too far from exhibit")
                     }
-                } else {
+                                    } else {
                     // Guide beacon
                 }
             }
