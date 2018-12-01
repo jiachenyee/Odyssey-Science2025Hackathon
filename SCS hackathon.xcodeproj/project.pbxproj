@@ -16,7 +16,6 @@
 		321E527221A97B8F00D20D51 /* SCS_hackathonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 321E527121A97B8F00D20D51 /* SCS_hackathonTests.swift */; };
 		321E527D21A97B8F00D20D51 /* SCS_hackathonUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 321E527C21A97B8F00D20D51 /* SCS_hackathonUITests.swift */; };
 		323F633121AFBBFD00EC7854 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 323F633021AFBBFD00EC7854 /* HomeViewController.swift */; };
-		3242F25921B12440004FE215 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 32F800A721B1187800E9C5AE /* Assets.xcassets */; };
 		3242F25B21B19CA1004FE215 /* Navigation.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3242F25A21B19CA1004FE215 /* Navigation.storyboard */; };
 		32567F4F21B24A48007CCCFE /* IMG_2856.HEIC in Resources */ = {isa = PBXBuildFile; fileRef = 32567F3A21B24A43007CCCFE /* IMG_2856.HEIC */; };
 		32567F5021B24A48007CCCFE /* IMG_2854.HEIC in Resources */ = {isa = PBXBuildFile; fileRef = 32567F3B21B24A44007CCCFE /* IMG_2854.HEIC */; };
@@ -50,6 +49,7 @@
 		32F8009D21B0ECE500E9C5AE /* Menu.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32F8009C21B0ECE500E9C5AE /* Menu.storyboard */; };
 		32F8009F21B0EF1F00E9C5AE /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32F8009E21B0EF1F00E9C5AE /* MenuViewController.swift */; };
 		3F9932C98BE3E3EA52EFE932 /* Pods_SCS_hackathon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6904F19B66806FD1D89B1F5 /* Pods_SCS_hackathon.framework */; };
+		426FEBA421B28BE5002F8797 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 426FEBA321B28BE4002F8797 /* Assets.xcassets */; };
 		5A5890559857AE6208EC7E56 /* Pods_SCS_hackathonTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7ABA77785C04A7A847AF2B85 /* Pods_SCS_hackathonTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -117,8 +117,8 @@
 		32F8009A21AFCB5E00E9C5AE /* TriangleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TriangleView.swift; sourceTree = "<group>"; };
 		32F8009C21B0ECE500E9C5AE /* Menu.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Menu.storyboard; sourceTree = "<group>"; };
 		32F8009E21B0EF1F00E9C5AE /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
-		32F800A721B1187800E9C5AE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		332E36BE5204B692D86781A7 /* Pods-SCS hackathonTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SCS hackathonTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SCS hackathonTests/Pods-SCS hackathonTests.debug.xcconfig"; sourceTree = "<group>"; };
+		426FEBA321B28BE4002F8797 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4A19E68FF84B004E6C7D8214 /* Pods-SCS hackathon.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SCS hackathon.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SCS hackathon/Pods-SCS hackathon.debug.xcconfig"; sourceTree = "<group>"; };
 		4FAC6ABB744BBAE3195FEF09 /* Pods_SCS_hackathonUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SCS_hackathonUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6F038815D4C6AE01F82FF8AA /* Pods-SCS hackathonUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SCS hackathonUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SCS hackathonUITests/Pods-SCS hackathonUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -294,7 +294,7 @@
 			children = (
 				32567F0F21B21534007CCCFE /* Exhibit images */,
 				32F8009821AFC27E00E9C5AE /* menu_hamburger.json */,
-				32F800A721B1187800E9C5AE /* Assets.xcassets */,
+				426FEBA321B28BE4002F8797 /* Assets.xcassets */,
 				321E525C21A97B8600D20D51 /* art.scnassets */,
 				32567F6621B266E2007CCCFE /* map.sks */,
 				32567F6821B26765007CCCFE /* mapp.png */,
@@ -438,7 +438,6 @@
 				32567F5721B24A48007CCCFE /* IMG_4621.HEIC in Resources */,
 				32F8009921AFC27E00E9C5AE /* menu_hamburger.json in Resources */,
 				32567F5821B24A48007CCCFE /* IMG_7706.HEIC in Resources */,
-				3242F25921B12440004FE215 /* Assets.xcassets in Resources */,
 				32567F5F21B24A48007CCCFE /* IMG_2850.HEIC in Resources */,
 				32567F5C21B24A48007CCCFE /* IMG_2853.HEIC in Resources */,
 				32567F6121B24A48007CCCFE /* IMG_2861.HEIC in Resources */,
@@ -448,6 +447,7 @@
 				321E526221A97B8700D20D51 /* Main.storyboard in Resources */,
 				32567F5121B24A48007CCCFE /* IMG_2851.HEIC in Resources */,
 				32567F5D21B24A48007CCCFE /* IMG_2862.HEIC in Resources */,
+				426FEBA421B28BE5002F8797 /* Assets.xcassets in Resources */,
 				32567F5B21B24A48007CCCFE /* IMG_2848.HEIC in Resources */,
 				32567F5021B24A48007CCCFE /* IMG_2854.HEIC in Resources */,
 				32567F5E21B24A48007CCCFE /* IMG_8904.HEIC in Resources */,
