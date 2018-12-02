@@ -432,7 +432,7 @@ class ARViewController: UIViewController, ARSCNViewDelegate, CLLocationManagerDe
         let configuration = ARWorldTrackingConfiguration()
         //object detect
         if #available(iOS 12.0, *) {
-            configuration.detectionObjects = ARReferenceObject.referenceObjects(inGroupNamed: "Chair", bundle: Bundle.main)!
+            configuration.detectionObjects = ARReferenceObject.referenceObjects(inGroupNamed: "AR Resources", bundle: Bundle.main)!
         } else {
             // Fallback on earlier versions
         }
