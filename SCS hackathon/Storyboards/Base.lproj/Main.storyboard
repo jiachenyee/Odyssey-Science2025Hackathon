@@ -340,7 +340,7 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iHV-yu-0Ua">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="414"/>
                                         <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="map-levelthree" translatesAutoresizingMaskIntoConstraints="NO" id="EZ3-O7-LFJ">
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="map level 2" translatesAutoresizingMaskIntoConstraints="NO" id="EZ3-O7-LFJ">
                                                 <rect key="frame" x="0.0" y="0.0" width="414" height="414"/>
                                             </imageView>
                                         </subviews>
@@ -515,7 +515,7 @@
         <image name="aureliusStickers.004.png" width="512" height="512"/>
         <image name="backArrow" width="1900" height="1900"/>
         <image name="dismiss" width="1920" height="1920"/>
-        <image name="map-levelthree" width="6000" height="6000"/>
+        <image name="map level 2" width="6000" height="6000"/>
         <image name="xr img" width="1680" height="666"/>
         <namedColor name="main color">
             <color red="0.81568627450980391" green="0.49411764705882355" blue="0.36078431372549019" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

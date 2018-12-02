@@ -108,6 +108,22 @@ class EmbededMapViewController: UIViewController, CLLocationManagerDelegate, UIS
         // Dalton Audi locations
         exhibitBeacon1.frame.origin = CGPoint(x: 280, y: 276)
         exhibitBeacon2.frame.origin = CGPoint(x: 300, y: 246)
+        
+        // Presentation venue
+        exhibitBeacon1.frame.origin = CGPoint(x: 145, y: 70)
+        exhibitBeacon2.frame.origin = CGPoint(x: 150, y: 82)
+        guideBeacon1.frame.origin = CGPoint(x: 150, y: 70)
+        guideBeacon2.frame.origin = CGPoint(x: 150, y: 73)
+        guideBeacon3.frame.origin = CGPoint(x: 150, y: 76)
+        guideBeacon4.frame.origin = CGPoint(x: 150, y: 79)
+//        guideBeacon5.frame.origin = CGPoint(x: <#T##CGFloat#>, y: <#T##CGFloat#>)
+//        guideBeacon6.frame.origin = CGPoint(x: <#T##CGFloat#>, y: <#T##CGFloat#>)
+//        guideBeacon7.frame.origin = CGPoint(x: <#T##CGFloat#>, y: <#T##CGFloat#>)
+//        guideBeacon8.frame.origin = CGPoint(x: <#T##CGFloat#>, y: <#T##CGFloat#>)
+        
+        
+        
+        
     }
     func setupBeaconPoints(location: CGPoint) {
         
@@ -180,28 +196,28 @@ class EmbededMapViewController: UIViewController, CLLocationManagerDelegate, UIS
         if immediateBeacons != [] {
             if immediateBeacons[0].major == 1 {
                 if immediateBeacons[0].minor == 1 {
-                    userNode.frame.origin = CGPoint(x: exhibitBeacon1.frame.origin.x + 5, y: exhibitBeacon1.frame.origin.y - 5)
+                    userNode.frame.origin = CGPoint(x: exhibitBeacon1.frame.origin.x + 2, y: exhibitBeacon1.frame.origin.y - 2)
                 } else {
-                    userNode.frame.origin = CGPoint(x: exhibitBeacon2.frame.origin.x + 5, y: exhibitBeacon2.frame.origin.y - 5)
+                    userNode.frame.origin = CGPoint(x: exhibitBeacon2.frame.origin.x + 2, y: exhibitBeacon2.frame.origin.y - 2)
                 }
             } else {
                 switch immediateBeacons[0].minor {
                 case 1:
-                    userNode.frame.origin = CGPoint(x: guideBeacon1.frame.origin.x + 5, y: guideBeacon1.frame.origin.y - 5)
+                    userNode.frame.origin = CGPoint(x: guideBeacon1.frame.origin.x + 2, y: guideBeacon1.frame.origin.y - 2)
                 case 2:
-                    userNode.frame.origin = CGPoint(x: guideBeacon2.frame.origin.x + 5, y: guideBeacon2.frame.origin.y - 5)
+                    userNode.frame.origin = CGPoint(x: guideBeacon2.frame.origin.x + 2, y: guideBeacon2.frame.origin.y - 2)
                 case 3:
-                    userNode.frame.origin = CGPoint(x: guideBeacon3.frame.origin.x + 5, y: guideBeacon3.frame.origin.y - 5)
+                    userNode.frame.origin = CGPoint(x: guideBeacon3.frame.origin.x + 2, y: guideBeacon3.frame.origin.y - 2)
                 case 4:
-                    userNode.frame.origin = CGPoint(x: guideBeacon4.frame.origin.x + 5, y: guideBeacon4.frame.origin.y - 5)
+                    userNode.frame.origin = CGPoint(x: guideBeacon4.frame.origin.x + 2, y: guideBeacon4.frame.origin.y - 2)
                 case 5:
-                    userNode.frame.origin = CGPoint(x: guideBeacon5.frame.origin.x + 5, y: guideBeacon5.frame.origin.y - 5)
+                    userNode.frame.origin = CGPoint(x: guideBeacon5.frame.origin.x + 2, y: guideBeacon5.frame.origin.y - 2)
                 case 6:
-                    userNode.frame.origin = CGPoint(x: guideBeacon6.frame.origin.x + 5, y: guideBeacon6.frame.origin.y - 5)
+                    userNode.frame.origin = CGPoint(x: guideBeacon6.frame.origin.x + 2, y: guideBeacon6.frame.origin.y - 2)
                 case 7:
-                    userNode.frame.origin = CGPoint(x: guideBeacon7.frame.origin.x + 5, y: guideBeacon7.frame.origin.y - 5)
+                    userNode.frame.origin = CGPoint(x: guideBeacon7.frame.origin.x + 2, y: guideBeacon7.frame.origin.y - 2)
                 case 8:
-                    userNode.frame.origin = CGPoint(x: guideBeacon8.frame.origin.x + 5, y: guideBeacon8.frame.origin.y - 5)
+                    userNode.frame.origin = CGPoint(x: guideBeacon8.frame.origin.x + 2, y: guideBeacon8.frame.origin.y - 2)
                 default: break
                 }
             }
@@ -217,21 +233,21 @@ class EmbededMapViewController: UIViewController, CLLocationManagerDelegate, UIS
                 } else {
                     switch nearBeacons[0].minor {
                     case 1:
-                        userNode.frame.origin = CGPoint(x: guideBeacon1.frame.origin.x + 10, y: guideBeacon1.frame.origin.y - 10)
+                        userNode.frame.origin = CGPoint(x: guideBeacon1.frame.origin.x + 5, y: guideBeacon1.frame.origin.y - 5)
                     case 2:
-                        userNode.frame.origin = CGPoint(x: guideBeacon2.frame.origin.x + 10, y: guideBeacon2.frame.origin.y - 10)
+                        userNode.frame.origin = CGPoint(x: guideBeacon2.frame.origin.x + 5, y: guideBeacon2.frame.origin.y - 5)
                     case 3:
-                        userNode.frame.origin = CGPoint(x: guideBeacon3.frame.origin.x + 10, y: guideBeacon3.frame.origin.y - 10)
+                        userNode.frame.origin = CGPoint(x: guideBeacon3.frame.origin.x + 5, y: guideBeacon3.frame.origin.y - 5)
                     case 4:
-                        userNode.frame.origin = CGPoint(x: guideBeacon4.frame.origin.x + 10, y: guideBeacon4.frame.origin.y - 10)
+                        userNode.frame.origin = CGPoint(x: guideBeacon4.frame.origin.x + 5, y: guideBeacon4.frame.origin.y - 5)
                     case 5:
-                        userNode.frame.origin = CGPoint(x: guideBeacon5.frame.origin.x + 10, y: guideBeacon5.frame.origin.y - 10)
+                        userNode.frame.origin = CGPoint(x: guideBeacon5.frame.origin.x + 5, y: guideBeacon5.frame.origin.y - 5)
                     case 6:
-                        userNode.frame.origin = CGPoint(x: guideBeacon6.frame.origin.x + 10, y: guideBeacon6.frame.origin.y - 10)
+                        userNode.frame.origin = CGPoint(x: guideBeacon6.frame.origin.x + 5, y: guideBeacon6.frame.origin.y - 5)
                     case 7:
-                        userNode.frame.origin = CGPoint(x: guideBeacon7.frame.origin.x + 10, y: guideBeacon7.frame.origin.y - 10)
+                        userNode.frame.origin = CGPoint(x: guideBeacon7.frame.origin.x + 5, y: guideBeacon7.frame.origin.y - 5)
                     case 8:
-                        userNode.frame.origin = CGPoint(x: guideBeacon8.frame.origin.x + 10, y: guideBeacon8.frame.origin.y - 10)
+                        userNode.frame.origin = CGPoint(x: guideBeacon8.frame.origin.x + 5, y: guideBeacon8.frame.origin.y - 5)
                     default: break
                     }
                 }
