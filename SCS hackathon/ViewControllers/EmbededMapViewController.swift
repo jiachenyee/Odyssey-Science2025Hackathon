@@ -240,7 +240,7 @@ class EmbededMapViewController: UIViewController, CLLocationManagerDelegate, UIS
                         userNode.frame.origin = CGPoint(x: guideBeacon3.frame.origin.x + 2, y: guideBeacon3.frame.origin.y - 2)
                     case 4:
                         userNode.frame.origin = CGPoint(x: guideBeacon4.frame.origin.x + 2, y: guideBeacon4.frame.origin.y - 2)
-                    case 2:
+                    case 5:
                         userNode.frame.origin = CGPoint(x: guideBeacon2.frame.origin.x + 2, y: guideBeacon2.frame.origin.y - 2)
                     case 6:
                         userNode.frame.origin = CGPoint(x: guideBeacon6.frame.origin.x + 2, y: guideBeacon6.frame.origin.y - 2)
